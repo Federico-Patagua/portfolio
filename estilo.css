@@ -52,10 +52,10 @@ body{
     align-items: baseline;
     justify-content: center;
     transition: .3s;
-    background: rgb(41, 41, 41);
+    background: black;
     transform: translateY(5px);
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(56, 56, 56);
+    box-shadow: 0 1px 1px #a74331;
     
     
 }
@@ -143,7 +143,7 @@ body{
 .flex-container{
     display: flex;
     align-items: baseline;
-    padding: 20px;
+    padding: 50px;
     border: 2px solid #8b8b8b; 
     border-radius: 15px;
     margin:5px;
@@ -159,7 +159,7 @@ body{
     padding: 5px;
 }
 .bg{
-    background-image: url(img/TIERRA-ESPACIO.jpg);
+    background-image: url("img/TIERRA-ESPACIO.jpg");
     background-position: center center;
     border-radius: 10px;
     position: relative;
@@ -181,11 +181,23 @@ body{
     background-image: url("img/TAZA.png");
     background-repeat: no-repeat;
     background-position: center center;
+    
 }
 .skill__h2:hover{
     color:red;
     transition: 0.3s;
 }
+.img__experiencia1 h4{
+    color:white;
+}
+.img__experiencia1 h5:hover{
+    color:#000000;
+}
+.img__experiencia1:hover{
+    background-color: lightblue;
+    transition: 0.5s;
+}
+
 
 @media only screen and (max-width: 700px) {
     .flex-container {
