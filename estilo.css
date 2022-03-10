@@ -159,7 +159,7 @@ body{
     padding: 5px;
 }
 .bg{
-    background-image: url(TIERRA-ESPACIO.jpg);
+    background-image: url(img/TIERRA-ESPACIO.jpg);
     background-position: center center;
     border-radius: 10px;
     position: relative;
@@ -178,7 +178,7 @@ body{
     text-align: center;
 }
 .bg__taza{
-    background-image: url("TAZA.png");
+    background-image: url("img/TAZA.png");
     background-repeat: no-repeat;
     background-position: center center;
 }
