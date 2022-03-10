@@ -22,23 +22,31 @@ body{
     background:rgb(0, 0, 0);
 
 }
-  
+.menu__letras{
+    width:210px;
+    height:50px;
+}
 .menu__letras:hover{
     background: #a74331;
     transition: .1ms;
     border-radius: 10px;
 }
-
+.login{
+    color:black;
+    width: 70px;
+    height: 50px;
+}
 .login:hover{
     padding: 10px;
     display: flow-root;
     align-items: baseline;
     justify-content: center;
     transition: .3s;
-    background: black;
-    transform: translateY(5px);
+    background: lightcyan;
+    transform: translateY(-2px);
     border-radius: 10px;
-    box-shadow: 0 1px 1px #a74331;
+    box-shadow: 0 1px 10px black;
+    color:black;
 }
 .card{
     background-color: #353535;
