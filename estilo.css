@@ -178,7 +178,7 @@ body{
         grid-template-columns: auto;
     }
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 250px) {
     .flex-container {
         display: none;
     }
