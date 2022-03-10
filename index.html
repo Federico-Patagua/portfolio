@@ -8,15 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
-<body>
+<body class="bg-dark">
     <!--BARRA DE NAVEGACIÓN-->
     <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <a class="nav-link active text-white" aria-current="page" href="#">Conocimientos</a>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
+      <div class="p-4">
+        <a class="nav-link active text-white menu__letras" aria-current="page" href="#">Educación</a>
+        <a class="nav-link active text-white menu__letras" aria-current="page" href="#">Hards Skills</a>
+        <a class="nav-link active text-white menu__letras" aria-current="page" href="#">Más sobre mí</a>
+        <a class="nav-link active text-white menu__letras" aria-current="page" href="#">Contacto</a>
+        <a class="nav-link active login" aria-current="page" href="#"  style="color:#3164a7">Login</a>
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark">
       <div class="container-fluid">
         <button class="navbar-toggler efectos__botones" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,109 +28,237 @@
         
       </div>
     </nav>
-    <!--<nav class="navbar navbar-expand-lg color-menu">
-        <div class="container-fluid">
-              <img src="LOGO.png" alt="logo" width="80"> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Conocimientos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Habilidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Formación académica</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Más sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-              </li>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Busca una palabra" aria-label="Search">
-              <button class="btn btn-dark color-buttom" type="submit">Buscar</button>
+
+      <!--TARJETA DE PRESENTACIÓN(1 columna)-->
+      <div class="flex-container justify-content-center bg__taza">
+        <div class="hijos"> <!--HIJO 1-->
+          <div class="card">
+            <div class="head">
+              <div class="circle">
+              </div>
+                <div class="img">
+                  <img src="Yo.jpeg" alt="Federico Patagua">
+                </div>
+              </div>
+
+              <div class="description">
+                <h3>Federico Patagua</h3>
+                <h4>Estudiante de Ingeniería Industrial</h4>
+                <p>Soy una persona que constantemente busca nuevos retos y aprendizajes, esa es la razón por la que me brindo al 100% para obtener los mejores resultados posibles.</p><p>
+                  Disfruto trabajar en equipo y establecer vinculos.
+                </p>
+                <p>Me apasionan las tecnologías en general, esto fue lo que me llevó a inscribirme en la capacitación de <strong>Argentina Programa</strong> , y entrar al mundo de la programación como <strong>DESARROLLADOR WEB.</strong></p>
+              </div>
+              <div class="contact">
+                <a href="#">Más sobre mí</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!--BARRA DE EDUCACIÓN-->
+      <div class="flex-container">
+        <div class="hijos"> 
+          <div class="container bg-dark">
+            <h1 style="color:white">Educación</h1>
+            <h3 style="color:white">Universitaria</h3>
+            
+            <h5 style="color:#3164a7; text-align:left"><strong>Ingeniería Industrial</strong>
+              <ul style="color:white;" type="square">
+                <li>UTN - Universidad Técnologica Nacional, facultad regional Avellaneda.</li>
+                <li>17 materias aprobadas.</li>
+                <li>Estudiante intermedio, 3er año.</li>
+                </ul>
+                <h5 style="color:#b62e2e; text-align:left"><strong>Ingeniería Electrónica</strong>
+                  <ul style="color:white;" type="square">
+                    <li>UTN - Universidad Técnologica Nacional, facultad regional Avellaneda.</li>
+                    <li>14 materias aprobadas.</li>
+                    <li>Estudiante intermedio, 3er año.</li>
+                    </ul>
+                </h5>
+                    <h3 style="color:white">Secundaria</h3>
+                    <li style="color:white">Instituto Madre Teresa, Quilmes Oeste.
+                      <ul type="square"><strong><u>Título:</u></strong> Bachiller con orientación en Economía y Administración.
+                      </li>
+                    </ul>
+                  </div></div>
+                </div>
+      <!--BARRA SKILLS-->
+      <div class="flex-container">
+        <!--BARRA HARD SKILLS-->
+        <div class="hijos col ">
+          <div class="container">
+            <h1 style="color:white"> Hards Skills</h1>
+            <div class="accordion accordion-flush  bg-dark" id="accordionFlushExample">
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header skill__h2" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img src="HTML5.png" alt="LOGO HTML5" width="40"> <strong style="color: white">HTML </strong>  
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                  </div></div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header skill__h2" id="flush-headingTwo">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <img src="CSS-LOGO.png" alt="LOGO CSS" width="40"> <strong style="color:white">CSS</strong> 
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div></div>
+                </div></div>
+         
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <img src="JAVASCRIPT_LOGO.png" alt="LOGO JAVASCRIPT" width="35" > <strong style="color:white">JAVASCRIPT</strong> 
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div></div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <img src="MySQL.png" alt="LOGO MySQL" width="40"><strong style="color:white">MySQL</strong>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div></div>
+                </div></div>
+            </div>></div>
+          </div>
+          </div>
+        </div>
+        <!--BARRA SOFT SKILLS-->
+        <div class="hijos col">
+          <div class="container">
+            <h1 style="color:white"> Soft Skills</h1>
+            <div class="accordion accordion-flush  bg-dark" id="accordionFlushExample">
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <img src="EMPATIA.png" alt="Img" width="40"> <strong style="color: white">EMPATIA </strong>  
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                  </div></div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    <img src="TRABAJO_EN_EQUIPO.png" alt="Img" width="40"> <strong style="color:white">TRABAJO EN EQUIPO</strong> 
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div>
+                </div></div>
+         
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    <img src="APRENDIZAJE.png" alt="Img" width="35" > <strong style="color:white">APRENDIZAJE CONTINUO</strong> 
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div></div></div>
+                </div>
+              </div>
+              <div class="accordion-item bg-dark">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    <img src="COMUNICACION.png" alt="Img" width="40"><strong style="color:white">COMUNICACIÓN</strong>
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><div class="progress"><div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div>
+                </div></div>
+            </div>></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--FORMULARIO DE ENTRADA-->
+      <div class="container__login">
+        <div class="row">
+          <div class="col bg">
+          </div>
+          <div class="col">
+            <h2 class="fw-bold text-center py-5" style="color:white">
+              ¡Bienvenido!
+            </h2>
+            <!--LOGIN-->
+            <form action="#">
+              <div class="mb-4">
+                <label for="email" class="form-label" style="color:white">Correo electrónico</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label" style="color:white">Contraseña</label>
+                <input type="password" class="form-control" name="password">
+              </div>
+              <div class="mb-4 form-check">
+                <input type="checkbox" name="conected" class="form-check-input">
+                <label for="connected" class="form-check-label" style="color:white;">Recordarme</label>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+              </div>
+              <div class="my-3 font-size-left">
+                <span style="color:white;">¿No tienes cuenta? </span><a href="#">Regístrate</a></br>
+                <span><a href="#">Recuperar contraseña</a></span>
+              </div>
             </form>
+
+            <!--LOGIN CON REDES SOCIALES-->
+            <div class="container w-100 my-5">
+              <div class="row text-center">
+                <div class="col-12" style="color:white;">Iniciar sesión con: </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                <button class="btn btn-outline-primary w-100 my-1">
+                  <div class="row align-items-center">
+                    <div class="col-2">
+                      <img src="FACEBOOK.png" alt="LOGO FACEBOOK" width="32">
+                    </div>
+                    <div class="col-10 text-center">FACEBOOK</div>
+                  </div>
+                </button>
+                </div>
+                <div class="col">
+                  <button class="btn btn-outline-danger w-100 my-1">
+                    <div class="row align-items-center">
+                      <div class="col-2">
+                        <img src="GOOGLE-LOGO.png" alt="LOGO GOOGLE" width="32">
+                      </div>
+                      <div class="col-10 text-center">GOOGLE</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>-->
-      <div>
-      <div class="card bg-dark" style="width: 14rem;">
-        <img src="Yo.jpeg" class="card__img-top" alt="Federico Patagua"> 
-        <div class="card-body">
-          <h5 class="card-title">Federico Patagua</h5>
-          <p class="card-text">Estudiante de ingenieria industrial. </p> <p> Me considero una persona inquieta, lo que me lleva a buscar constantemente nuevos retos y aprendizajes.</p>
-        </div> 
       </div>
-      <div class="accordion accordion-flush  bg-dark" id="accordionFlushExample">
-        <div class="accordion-item bg-dark">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              HTML
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"><div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-            </div></div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              CSS
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              JAVASCRIPT
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              MySQL
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
+      <!--FORMULARIO DE CONTACTO-->
+      <div class="form__contact">
+        <h4 style="color:white">Contacta conmigo</h4>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label" style="color:white">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
-    </div>
-<!--<image src="Yo.jpeg" width="100" height="100" alt></image>
-<section>
-    Conocimientos
-    <aside class="barra_desplegable">Me considero una persona inquieta, lo que me lleva a buscar siempre nuevos conocimientos.</aside>
-</section>
-
-<section>
-    Habilidades
-    <aside class="barra_desplegable"> Soy una persona proactiva, que busca generar vinculos entre compañeros, así como también me gusta trabajar en equipo.</aside>
-</section>
-
-<section>
-    Formación académica
-    <aside class="barra_desplegable">Tengo un gran sentido de pertenencia hacia la institución en la que realizo mis estudios, en algún momento me gustaría poder llegar a ser ayudante de cátedra.</aside>
-</section>
-
-<section>
-    Más sobre mí
-    <aside>Tengo un perfil sumamente ligado a la tecnologia, ya que es lo que me apasiona. Por eso, mi objetivo principal es poder hacerme un camino dentro del mundo IT. </aside>
-</section>
--->
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label" style="color:white">Escriba texto aquí</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div></div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
 </body>

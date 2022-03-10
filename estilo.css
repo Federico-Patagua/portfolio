@@ -1,49 +1,200 @@
 body{
-    background-color: #474747;
     padding: 2em;
     
 }
-.referencias{
-    color: #a76a31;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+
+.navbar{
+    border:2px solid #8b8b8b;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    padding: 5px;
+
+}
+.efectos__botones:hover{
+    transition: .4s;
+    background: #686868;
+
+    
+}
+.navbar:hover{
+    transition: .1s;
+    background:rgb(0, 0, 0);
+
 }
 .color-menu{
     background-color: #353535;
+    
 }
 .color-menu a{
     color: #ffffff;
 }
 
 .color-menu a:hover{
-    color: #db7603;
+    color: #ffffff;
+}
+.menu__letras:hover{
+    background: #a74331;
+    transition: .1ms;
+    border-radius: 10px;
 }
 .color-button{
     background-color: #000000;
-    color: #db7603;
+    color: #3164a7;
 }
 .color-acordion1 { 
     background-color: #000000;
     color: #ffffff;
 }
-footer {
-    background-color: #000000;
-    color: #ffffff;
-}
-.card__img-top{
-    border-radius: 100rem;
-    box-shadow: 0px 0px 6px black;
+.login:hover{
+    padding: 10px;
+    display: flow-root;
+    align-items: baseline;
+    justify-content: center;
+    transition: .3s;
+    background: rgb(41, 41, 41);
+    transform: translateY(5px);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(56, 56, 56);
+    
+    
 }
 .card{
     background-color: #353535;
+    position: relative;
+    width: 300px;
+    height: 700px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    justify-content: left;
+}
+.card:hover{
+    box-shadow: 0 15px 65px #353535;
+    transform: translateY(15px);
+}
+.card .head{
+    height:125px;
+    width:100%;
+    position: relative;
 } 
-.card-body{
+.card .head .circle{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    bottom: 0;
+    background: #999898;
+}
+.card .head .img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
     background-color: #353535;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%)
+    
+}
+.card .head .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card .description{
+    height: 550px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px #3164a7;
+    text-align: left;
+}
+.card .description h3{
     color: #ffffff;
+}
+.card .description h4{
+    color: #8b8b8b;
+}
+.card .description p{
+    margin-top: 20px;
+    font-size: 15px;
+    color:#888888;
+}
+.card .contact{
+    width: 100%;
+    height: 75px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.card .contact a{
+    text-decoration: none;
+    color:#ffffff;
+    background:rgba(34, 33, 33, 0)00; 
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.card .contact a:hover{
+    background:#3164a7;
 
 }
-.efectos__botones{
-    box-shadow: 0px 0px 6px white;
+.flex-container{
+    display: flex;
+    align-items: baseline;
+    padding: 20px;
+    border: 2px solid #8b8b8b; 
+    border-radius: 15px;
+    margin:5px;
+    grid-template-columns: 20% 30% auto;
+    
 }
+
+
+.container__login{
+    border: 2px solid #8b8b8b;
+    border-radius: 2%;
+    margin: 5px;
+    padding: 5px;
+}
+.bg{
+    background-image: url(TIERRA-ESPACIO.jpg);
+    background-position: center center;
+    border-radius: 10px;
+    position: relative;
+    justify-content: right;
+    display:grid;
+    object-fit: cover;
+    margin:15px;
+  }
+.form__contact{
+    padding:5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #8b8b8b;
+}
+.form__contact h4{
+    text-align: center;
+}
+.bg__taza{
+    background-image: url("TAZA.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.skill__h2:hover{
+    color:red;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 700px) {
+    .flex-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    .flex-container {
+        display: none;
+    }
+  }
